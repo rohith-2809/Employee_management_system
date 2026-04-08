@@ -568,6 +568,7 @@ if (process.env.NODE_ENV === "production") {
 app.use((err, req, res, next) => {
   console.error("FATAL ERROR:", err);
 
+  
   // Handle Mongoose CastErrors (invalid IDs) specifically
   if (err.name === 'CastError') {
     return res.status(400).json({
