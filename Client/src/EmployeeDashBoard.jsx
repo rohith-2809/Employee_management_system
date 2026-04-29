@@ -1,5 +1,5 @@
 import React from "react";
-import clsx from "clsx"; 
+import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState, useRef, memo } from "react";
 import {
