@@ -8,8 +8,7 @@ const path = require("path"); // For serving static files
 const fs = require("fs");
 const multer = require("multer");
 const helmet = require("helmet"); // For security headers
-require("dotenv").config();
-
+const dotenv = require("dotenv").config();
 const app = express();
 const https = require("https"); // For keep-alive self-ping
 const PORT = process.env.PORT || 5000;
